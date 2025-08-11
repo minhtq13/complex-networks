@@ -1,0 +1,6 @@
+pandas
+networkx
+numpy
+matplotlib
+scipy
+openpyxl
