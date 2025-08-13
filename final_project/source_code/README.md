@@ -1,8 +1,9 @@
 ## ComplexNetwork
 
+Author: Tạ Quang Minh - 20242537
 Phân tích mạng từ chuỗi thời gian dao động (Horizontal Visibility Graph - HVG) và các chỉ số mạng trên dữ liệu cổ phiếu. Dự án này là final project cho môn Complex Network.
 
-## Cấu trúc thư mục (đã tổ chức lại)
+## Cấu trúc thư mục
 
 - `src/`
   - `hvg_builder.py`: Hàm xử lý/biến đổi dữ liệu, tạo HVG, vẽ mạng tô màu theo out-degree.
@@ -64,8 +65,6 @@ python src/degree_stats.py
 python src/paths_and_hamilton.py
 ```
 
-Lưu ý: Nếu `src/my_f2.py` báo thiếu cột `daodong` trong `data/data_final.csv`, hãy tạo lại `data_final.csv` bằng `tao_mang_visibility` (bước 3 ở trên).
-
 ## Đầu ra tiêu biểu (có sẵn trong `output/`)
 
 - `graph_network.png`, `graph_daodong.png`, `hist_weight.png`, `degree_distribution.png`
@@ -74,7 +73,7 @@ Lưu ý: Nếu `src/my_f2.py` báo thiếu cột `daodong` trong `data/data_fina
 - `scc_size_distribution.png`, `largest_scc_subgraph.png`
 - `degree_centrality.png`, `eigenvector_centrality.png`, `closeness_centrality.png`, `betweenness_centrality.png`, `k_core.png`
 
-## Gợi ý mở rộng / làm rõ
+## Hướng phát triển
 
 - Tối ưu hiệu năng tạo HVG (hiện O(n^2)): dùng kỹ thuật stack/segment tree để giảm độ phức tạp (tiệm cận O(n log n)).
 - Chuẩn hóa schema dữ liệu: đảm bảo `data_final.csv` luôn có `daodong` và `daodong_node_link` khi cần tái tính trọng số, kèm mô tả cột rõ ràng.
